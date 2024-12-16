@@ -1,6 +1,6 @@
 # Intrusion Detection: Few-Shot Learning vs. Traditional Techniques
 
-This repository presents a comparative analysis of intrusion detection methodologies, focusing on few-shot learning approaches versus traditional techniques. The study utilizes a subset of the CIC-IDS-2017 dataset to evaluate and contrast the performance of these methods.
+This repository presents a comparative analysis of intrusion detection methodologies, focusing on few-shot learning approaches versus the classic naive-bayes model. The study utilizes a subset of the CIC-IDS-2017 dataset to evaluate and contrast the performance of these methods.
 
 ## Repository Structure
 
@@ -30,15 +30,7 @@ python -m venv env
 source env/bin/activate  # On Windows: env\Scripts\activate
 ```
 
-3. **Install Dependencies**:
-
-```bash
-pip install -r requirements.txt
-```
-
-**Note**: The `requirements.txt` file should list all necessary packages. If it's missing, install common data science libraries such as `pandas`, `numpy`, `scikit-learn`, and `jupyter`.
-
-4. ### Run Jupyter Notebooks:
+3. ### Run Jupyter Notebooks:
 
 Launch Jupyter Notebook to explore the data cleaning and model implementation steps.
 
@@ -46,7 +38,7 @@ Launch Jupyter Notebook to explore the data cleaning and model implementation st
 jupyter notebook
 ```
 
-Open and execute the cells in `Data_Cleaning.ipynb` and `traditional_method.ipynb` to reproduce the results.
+Open and execute the cells in `few-shot-learning/FSL-model-IDS.ipynb` and `traditional_method.ipynb` to reproduce the results.
 
 ## Data Preprocessing
 
