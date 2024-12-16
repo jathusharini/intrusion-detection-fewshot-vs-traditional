@@ -93,6 +93,13 @@ The project provides a detailed comparison of:
 - Few-shot learning (modern approach)  
 
 Performance metrics such as accuracy, precision, and recall are evaluated and compared. Results, discussions, and visualizations can be found in their respective notebooks.
+**Classification Report**
+**Hidden Naive Bayes**
+<img width="326" alt="CR_NaiveBayes" src="https://github.com/user-attachments/assets/2616de19-175c-4585-9189-4765428cf125" />
+
+**Classification Report**
+**Few Shot Learning**
+<img width="335" alt="CR_FSL" src="https://github.com/user-attachments/assets/1b63b7ee-b87c-4324-b987-f7ea18c13804" />
 
 ---
 
