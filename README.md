@@ -1,2 +1,3 @@
-# intrusion-detection-fewshot-vs-traditional
-A repository created to compare intrusion detection using few-shot learning with a traditional technique.
+# intrusion-detection-fewshot-vs-naive-bayes
+A repository created to compare intrusion detection using few-shot learning with a Classical approach (Naive Bayes).
+
