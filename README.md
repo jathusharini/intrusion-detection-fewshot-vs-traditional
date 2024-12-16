@@ -6,18 +6,19 @@ This repository presents a comparative analysis of intrusion detection methodolo
 
 ## Repository Structure
 
-- **Data_Cleaning.ipynb**: A Jupyter Notebook detailing the data preprocessing steps applied to the CIC-IDS-2017 subset.
-- **create_binary_label.py**: A Python script that generates binary labels for the dataset, distinguishing between normal and intrusive network traffic.
-- **traditional_method.ipynb**: A Jupyter Notebook implementing a traditional intrusion detection technique, such as Hidden Naive Bayes, and evaluating its performance on the preprocessed dataset.
-- **few-shot-learning/**: Directory containing implementations related to few-shot learning approaches for intrusion detection.
-  - **FSL-model-IDS.ipynb**: Notebook implementing a Few-Shot Learning model for intrusion detection.
-  - **visualizations_test5_oversampling_issue.pth**: Saved model file for finalized results.
-- **Hidden_Naive_Bayes/**: Directory implementing the Hidden Naive Bayes model.
-  - **Hidden_Naive_Bayes_Classifier.ipynb**: Notebook implementing the Hidden Naive Bayes classifier with cross-validation.
+- **CIC-IDS-2017_Subset.xlsx**: Subset of the CIC-IDS-2017 dataset used for this analysis.
+- **Data_Cleaning.ipynb**: Jupyter Notebook for preprocessing the dataset (handling missing values, duplicates, and feature engineering).
+- **create_binary_label.py**: Script to add binary labels to the dataset (normal vs. intrusive traffic).
+- **cleaned_dataset.csv**: Preprocessed version of the dataset.
+- **Modified_dataset.csv**: Dataset after feature modifications.
+- **README.md**: Current documentation for the project.
 
-- **CIC-IDS-2017_Subset.xlsx**: Excel file containing the subset of the CIC-IDS-2017 dataset used in this analysis.
-- **cleaned_dataset.csv**: CSV file of the dataset after preprocessing steps.
-- **Modified_dataset.csv**: CSV file of the dataset after applying modifications, such as feature engineering or label creation.
+### Model Implementations
+- **Hidden_Naive_Bayes/**:
+  - **Hidden_Naive_Bayes_Classifier.ipynb**: Implements the Hidden Naive Bayes model with cross-validation.
+- **few-shot-learning/**:
+  - **FSL-model-IDS.ipynb**: Few-shot learning model for intrusion detection.
+  - **visualizations_test5_oversampling_issue.pth**: Finalized few-shot learning model.
 
 ---
 
