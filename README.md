@@ -2,15 +2,24 @@
 
 This repository presents a comparative analysis of intrusion detection methodologies, focusing on few-shot learning approaches versus the classic naive-bayes model. The study utilizes a subset of the CIC-IDS-2017 dataset to evaluate and contrast the performance of these methods.
 
+---
+
 ## Repository Structure
 
 - **Data_Cleaning.ipynb**: A Jupyter Notebook detailing the data preprocessing steps applied to the CIC-IDS-2017 subset.
 - **create_binary_label.py**: A Python script that generates binary labels for the dataset, distinguishing between normal and intrusive network traffic.
 - **traditional_method.ipynb**: A Jupyter Notebook implementing a traditional intrusion detection technique, such as Hidden Naive Bayes, and evaluating its performance on the preprocessed dataset.
 - **few-shot-learning/**: Directory containing implementations related to few-shot learning approaches for intrusion detection.
+  - **FSL-model-IDS.ipynb**: Notebook implementing a Few-Shot Learning model for intrusion detection.
+  - **visualizations_test5_oversampling_issue.pth**: Saved model file for finalized results.
+- **Hidden_Naive_Bayes/**: Directory implementing the Hidden Naive Bayes model.
+  - **Hidden_Naive_Bayes_Classifier.ipynb**: Notebook implementing the Hidden Naive Bayes classifier with cross-validation.
+
 - **CIC-IDS-2017_Subset.xlsx**: Excel file containing the subset of the CIC-IDS-2017 dataset used in this analysis.
 - **cleaned_dataset.csv**: CSV file of the dataset after preprocessing steps.
 - **Modified_dataset.csv**: CSV file of the dataset after applying modifications, such as feature engineering or label creation.
+
+---
 
 ## Getting Started
 
