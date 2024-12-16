@@ -47,8 +47,13 @@ Launch Jupyter Notebook to explore the data cleaning and model implementation st
 ```bash
 jupyter notebook
 ```
+Open the following notebooks to reproduce the results:
 
-Open and execute the cells in `few-shot-learning/FSL-model-IDS.ipynb` and `traditional_method.ipynb` to reproduce the results.
+- `Data_Cleaning.ipynb`
+- `Hidden_Naive_Bayes/Hidden_Naive_Bayes_Classifier.ipynb`
+- `few-shot-learning/FSL-model-IDS.ipynb`
+
+---
 
 ## Data Preprocessing
 
@@ -59,24 +64,37 @@ The `Data_Cleaning.ipynb` notebook outlines the following steps:
 - **Feature Engineering**: Creating new features or transforming existing ones to enhance model performance.
 - **Label Encoding**: Converting categorical labels into binary labels using `create_binary_label.py`.
 
+---
+
 ## Traditional Intrusion Detection Method
 
-The `traditional_method.ipynb` notebook demonstrates:
+The **`Hidden_Naive_Bayes/Hidden_Naive_Bayes_Classifier.ipynb`** notebook includes:
 
-- **Model Selection**: Implementing a traditional machine learning model, such as Hidden Naive Bayes.
-- **Training**: Fitting the model on the preprocessed dataset.
-- **Evaluation**: Assessing model performance using metrics like accuracy, precision, recall, and F1-score.
+- **Model Selection**: Hidden Naive Bayes classifier.
+- **Cross-Validation**: Ensures model robustness with validation folds.
+- **Evaluation**: Accuracy, Precision, Recall, and F1-Score.
+
+---
 
 ## Few-Shot Learning Approach
 
-The `few-shot-learning/` directory includes:
+The **`few-shot-learning/`** folder includes:
 
-- **Model Implementation**: Scripts and notebooks related to few-shot learning models tailored for intrusion detection.
-- **Training and Evaluation**: Procedures to train and assess the few-shot learning models on the dataset.
+- **FSL-model-IDS.ipynb**: Few-shot learning implementation to handle limited labeled data.
+- **visualizations_test5_oversampling_issue.pth**: Finalized model file.
+
+---
 
 ## Results and Discussion
 
-The repository provides insights into the effectiveness of few-shot learning compared to traditional methods in intrusion detection tasks. Detailed results, including performance metrics and analysis, are documented within the notebooks.
+The project provides a detailed comparison of:
+
+- Hidden Naive Bayes (traditional approach)  
+- Few-shot learning (modern approach)  
+
+Performance metrics such as accuracy, precision, and recall are evaluated and compared. Results, discussions, and visualizations can be found in their respective notebooks.
+
+---
 
 ## Contributors
 
