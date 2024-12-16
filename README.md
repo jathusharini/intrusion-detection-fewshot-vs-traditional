@@ -6,11 +6,11 @@ This repository presents a comparative analysis of intrusion detection methodolo
 
 ## Repository Structure
 
-- **CIC-IDS-2017_Subset.xlsx**: Subset of the CIC-IDS-2017 dataset used for this analysis.
-- **Data_Cleaning.ipynb**: Jupyter Notebook for preprocessing the dataset (handling missing values, duplicates, and feature engineering).
-- **create_binary_label.py**: Script to add binary labels to the dataset (normal vs. intrusive traffic).
-- **cleaned_dataset.csv**: Preprocessed version of the dataset.
-- **Modified_dataset.csv**: Dataset after feature modifications.
+- **CIC-IDS-2017_Subset.xlsx**: Initial Subset of the CIC-IDS-2017 dataset used for this analysis.
+- **create_binary_label.py**: Script to add binary labels to the dataset (normal vs. attacks).
+- **Modified_dataset.csv**: Updated dataset after adding binary labels.
+- **Data_Cleaning.ipynb**: Jupyter Notebook for preprocessing the dataset (handling missing values and duplicates).
+- **cleaned_dataset.csv**: Final preprocessed version of the dataset.
 - **README.md**: Current documentation for the project.
 
 ### Model Implementations
@@ -95,13 +95,19 @@ The project provides a detailed comparison of:
 Performance metrics such as accuracy, precision, and recall are evaluated and compared. Results, discussions, and visualizations can be found in their respective notebooks.
 
 
-**Classification Report**
-**Hidden Naive Bayes**
-<img width="326" alt="CR_NaiveBayes" src="https://github.com/user-attachments/assets/2616de19-175c-4585-9189-4765428cf125" />
+**Evaluation Results**
 
-**Classification Report**
-**Few Shot Learning**
-<img width="335" alt="CR_FSL" src="https://github.com/user-attachments/assets/1b63b7ee-b87c-4324-b987-f7ea18c13804" />
+| Evaluation Metric       | Traditional Model Results | FSL Framework Results |
+|--------------------------|---------------------------|------------------------|
+| **Accuracy**            | 80%                      | 94%                   |
+| **Precision (Benign)**  | 74%                      | 92%                   |
+| **Precision (Attack)**  | 91%                      | 96%                   |
+| **Recall (Benign)**     | 93%                      | 96%                   |
+| **Recall (Attack)**     | 69%                      | 92%                   |
+| **F1 (Benign)**         | 82%                      | 94%                   |
+| **F1 (Attack)**         | 78%                      | 94%                   |
+
+
 
 ---
 
